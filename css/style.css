@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* --- Utility */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+/* --- contenitore principale --- */
+.contenent {
+    max-width: 700px;
+    margin: 0 auto;
+}
+/* --- contenitori immagini --- */
+div[class^=box] {
+    width: calc(100% / 3);
+    margin-top: 20px;
+}
+.box-left{
+    padding: 0 15px 0 0;
+}
+.box-center{
+    padding: 0 15xp 0 15px;
+}
+.box-right{
+    padding: 0 0 0 15px;
+}
+
+/*--- Inserimento immagini + hover ---*/
+div[class^=img]{
+    width:100%; 
+    height: 300px;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+}
+
+.top .img-left{
+    background-image: url(../img/1.webp);
+}
+ .top > .box-left:hover .img-left{
+    background-image: url(../img/1-hover.webp);
+ }
+/*---*/
+.top .img-center{
+    background-image: url(../img/2.webp);
+}
+.top > .box-center:hover .img-center{
+    background-image: url(../img/2-hover.webp);
+ } 
+/*---*/
+.top .img-right{
+    background-image: url(../img/3.webp);
+}
+.top > .box-right:hover .img-right{
+    background-image: url(../img/3-hover.webp);
+ } 
+/* Immagini inferiori */
+.bottom .img-left{
+    background-image: url(../img/4.webp);
+}
+.bottom > .box-left:hover .img-left{
+    background-image: url(../img/4-hover.webp);
+ }
+/*---*/
+.bottom .img-center{
+    background-image: url(../img/5.webp);
+}
+.bottom > .box-center:hover .img-center{
+    background-image: url(../img/5-hover.webp);
+ } 
+/*---*/
+.bottom .img-right{
+    background-image: url(../img/6.webp);
+}
+.bottom > .box-right:hover .img-right{
+    background-image: url(../img/6-hover.webp);
+ } 
+
+/* Contenuto delle immagini */
+.heart{
+    background-image: url(../img/heart2.jpg);
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.text-img {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-size: small;
+}
+.sconto{
+    background-color: red;
+    margin-right: 10px;
+    padding: 2px;
+}
+.Sostenibilità{
+    background-color: green;
+    padding: 2px;
+}
+
+/* Contnuto aldisotto delle immagini */
+.information{
+    height: 80px;
+    padding: 10px 10px 10px 0;
+}
+.marca{
+    padding-top: 2px;
+}
+.prezzo{
+    color: red;
+    padding-top: 10px;
+}
+.green{
+    background-color: rgb(32, 179, 68);
+    height: 80px;
+    padding-top: 20px;
+}
+.text-bold{
+    font-weight: bold;
+}
